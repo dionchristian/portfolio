@@ -3,8 +3,6 @@
     const root = document.documentElement;
     const header = document.getElementById("main-nav-header");
     const themeToggleBtn = document.getElementById("theme-toggle-btn");
-    const moonIcon = document.getElementById("moon-icon");
-    const sunIcon = document.getElementById("sun-icon");
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
     function resolveTheme() {
@@ -15,10 +13,6 @@
 
     function applyTheme(theme) {
       root.setAttribute("theme", theme);
-      if (moonIcon && sunIcon) {
-        moonIcon.style.display = theme === "dark" ? "block" : "none";
-        sunIcon.style.display = theme === "dark" ? "none" : "block";
-      }
     }
 
     applyTheme(resolveTheme());
@@ -91,10 +85,11 @@
         });
 
         if (featuredGrid) {
-          const anyFeaturedVisible = Array.from(featuredGrid.querySelectorAll(".project-card")).some(function (c) {
+          const visibleFeaturedCount = Array.from(featuredGrid.querySelectorAll(".project-card")).filter(function (c) {
             return !c.hidden;
-          });
-          featuredGrid.style.display = anyFeaturedVisible ? "" : "none";
+          }).length;
+          featuredGrid.style.display = visibleFeaturedCount > 0 ? "" : "none";
+          featuredGrid.classList.toggle("single-visible", visibleFeaturedCount === 1);
         }
       });
     });

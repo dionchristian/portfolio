@@ -35,8 +35,8 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="style.css?v=2.0" />
-    <script defer src="script.js?v=2.0"></script>
+    <link rel="stylesheet" href="style.css?v=2.1" />
+    <script defer src="script.js?v=2.1"></script>
 
     <script>
       (function () {
@@ -79,6 +79,7 @@
 
   </head>
   <body>
+    <a href="#home" class="skip-link">Skip to main content</a>
     <header class="site-header" id="main-nav-header">
       <div class="nav-inner">
         <a href="#" class="nav-brand" id="nav-logo-lnk">DC<span>.</span></a>
@@ -100,10 +101,10 @@
             type="button"
             aria-label="Toggle light or dark theme"
           >
-            <svg id="moon-icon" viewBox="0 0 24 24" style="display: none;">
+            <svg id="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
-            <svg id="sun-icon" viewBox="0 0 24 24">
+            <svg id="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -124,7 +125,7 @@
             aria-expanded="false"
             aria-controls="mobile-nav-drawer"
           >
-            <svg viewBox="0 0 24 24">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <line x1="4" y1="7" x2="20" y2="7"></line>
               <line x1="4" y1="12" x2="20" y2="12"></line>
               <line x1="4" y1="17" x2="20" y2="17"></line>
@@ -243,6 +244,7 @@
               <button type="button" class="filter-btn" data-filter="fintech" aria-pressed="false">Fintech &amp; Enterprise</button>
               <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI &amp; Trading</button>
               <button type="button" class="filter-btn" data-filter="oss" aria-pressed="false">Open Source</button>
+              <button type="button" class="filter-btn" data-filter="games" aria-pressed="false">Games</button>
             </div>
           </div>
 
@@ -590,6 +592,59 @@
               </div>
             </article>
 
+            <article class="project-card animate-on-scroll" data-category="games">
+              <div class="project-card-top">
+                <span class="project-label">Multiplayer Game · Node.js / Socket.IO</span>
+                <div class="project-links">
+                  <a href="https://game.veludra.web.id/" target="_blank" rel="noopener noreferrer" class="project-ext-link" id="game-korporat-play">Controller ↗</a>
+                  <a href="https://game.veludra.web.id/host" target="_blank" rel="noopener noreferrer" class="project-ext-link" id="game-korporat-host">Host Arena ↗</a>
+                </div>
+              </div>
+              <h3 class="project-title">Perang Korporat — Office Party Strategy</h3>
+              <p class="project-outcome">
+                Jackbox-style dual-screen office battle game: laptop/projector host arena synced live with mobile phone controllers via 4-letter room code or QR, zero app download.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Socket.IO</span>
+                <span class="tag">10 Divisions</span>
+                <span class="tag">Dual-Screen</span>
+              </div>
+              <details class="case-details">
+                <summary>Mechanics &amp; Architecture</summary>
+                <div class="case-details-body">
+                  <p><strong>Gameplay:</strong> 10 corporate divisions compete across a shared office map with shrinking <em>Zona Efisiensi</em> budget-cut rounds, <em>Lembur Bareng</em> team coordination, and <em>Serikat Pengawas</em> spectator actions.</p>
+                  <p><strong>Delivery:</strong> Built separate phone controller and host arena views with real-time Socket.IO room sync, wall-aware direction locking, and built-in game audio cues.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="games">
+              <div class="project-card-top">
+                <span class="project-label">Multiplayer Game · Socket.IO / PWA</span>
+                <div class="project-links">
+                  <a href="https://monopoly.veludra.web.id/" target="_blank" rel="noopener noreferrer" class="project-ext-link" id="game-kavling-play">Play Live ↗</a>
+                </div>
+              </div>
+              <h3 class="project-title">Juragan Kavling — Bekasi Raya Board Game</h3>
+              <p class="project-outcome">
+                Real-time 2–6 player Bekasi-themed property trading board game in the browser with instant 4-letter room matchmaking and session persistence without accounts.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Socket.IO</span>
+                <span class="tag">PWA</span>
+                <span class="tag">2–6 Players</span>
+                <span class="tag">3 Visual Themes</span>
+              </div>
+              <details class="case-details">
+                <summary>Mechanics &amp; Architecture</summary>
+                <div class="case-details-body">
+                  <p><strong>Gameplay:</strong> Complete property monopolies (up to 5× rent), anti-snipe live auctions (+2s extension on last-second bids), and <em>Poin Dendam</em> comeback mechanics.</p>
+                  <p><strong>Delivery:</strong> Shipped installable web PWA with switchable <em>Pasar</em>, <em>Classic</em>, and <em>City</em> skins plus localStorage session recovery.</p>
+                </div>
+              </details>
+            </article>
+
           </div>
 
           <div class="work-footer-cta animate-on-scroll">
@@ -617,7 +672,7 @@
           <div class="strengths-grid animate-on-scroll">
             <div class="strength-card">
               <div class="strength-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
               </div>
@@ -630,7 +685,7 @@
 
             <div class="strength-card">
               <div class="strength-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
@@ -644,7 +699,7 @@
 
             <div class="strength-card">
               <div class="strength-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                   <circle cx="9" cy="7" r="4"></circle>
                   <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
