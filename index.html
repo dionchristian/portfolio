@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en" theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://veludra.web.id/" />
+    <meta
+      name="description"
+      content="Dion Christian — OJK-Compliant Fintech & HRIS Systems Developer. Production-grade mobile banking, automated PPh 21/BPJS payroll, AI/ML trading infrastructure, and full-stack financial & insurance systems (OpenBankPlus), and full-stack delivery across Go, Python, PHP, TypeScript."
+    />
+    <meta
+      name="keywords"
+      content="Full-Stack Engineer, Fintech Developer, HRIS, PPh 21, BPJS, CoreTax, Payroll Automation, OJK Compliance, PHP, Laravel, Go, TypeScript, React, Vue.js, FastAPI, AI Agents, CodeIgniter, FPDI, Insurance, Indonesia"
+    />
+    <meta
+      property="og:title"
+      content="Dion Christian | Full-Stack Engineer & Project Lead"
+    />
+    <meta
+      property="og:description"
+      content="Building production-grade fintech systems — from mobile banking PWAs to AI/ML-powered trading bots"
+    />
+    <meta property="og:image" content="https://veludra.web.id/profile-dion-christian.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dion Christian | Full-Stack Engineer & Project Lead" />
+    <meta name="twitter:description" content="Building production-grade fintech systems — from mobile banking PWAs to AI/ML-powered trading bots" />
+    <meta name="twitter:image" content="https://veludra.web.id/profile-dion-christian.jpg" />
+    <title>Dion Christian | OJK-Compliant Fintech &amp; HRIS Systems Developer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Ctext x='16' y='22' font-family='Inter,sans-serif' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3EDC%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css?v=2.0" />
+    <script defer src="script.js?v=2.0"></script>
+
+    <script>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var theme =
+          saved === "light" || saved === "dark"
+            ? saved
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("theme", theme);
+      })();
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dion Christian",
+      "jobTitle": "Full-Stack Engineer & Project Lead",
+      "description": "Specializing in fintech systems, OJK-compliant banking PWAs, AI/ML trading bots, and Go/Python/PHP infrastructure.",
+      "url": "https://veludra.web.id",
+      "image": "https://veludra.web.id/profile-dion-christian.jpg",
+      "sameAs": [
+        "https://github.com/dioncx",
+        "https://www.linkedin.com/in/dion-christian/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "LOXA Digital"
+      },
+      "knowsAbout": ["Fintech", "Go", "Python", "PHP", "Laravel", "Vue.js", "AI/ML", "OJK Compliance", "HRIS", "PPh 21", "BPJS", "CoreTax", "Algorithmic Trading", "FastAPI", "Docker"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "West Jakarta",
+        "addressCountry": "ID"
+      }
+    }
+    </script>
+
+  </head>
+  <body>
+    <header class="site-header" id="main-nav-header">
+      <div class="nav-inner">
+        <a href="#" class="nav-brand" id="nav-logo-lnk">DC<span>.</span></a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#work" class="nav-link" id="nav-work-lnk">Work</a></li>
+            <li><a href="#capabilities" class="nav-link" id="nav-strengths-lnk">Capabilities</a></li>
+            <li><a href="#journey" class="nav-link" id="nav-journey-lnk">Experience</a></li>
+            <li><a href="#philosophy" class="nav-link" id="nav-philosophy-lnk">Philosophy</a></li>
+            <li><a href="#contact" class="nav-link" id="nav-contact-lnk">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="theme-toggle-btn"
+            type="button"
+            aria-label="Toggle light or dark theme"
+          >
+            <svg id="moon-icon" viewBox="0 0 24 24" style="display: none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg id="sun-icon" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.77" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <button
+            class="icon-btn mobile-nav-toggle"
+            id="mobile-nav-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-nav-drawer"
+          >
+            <svg viewBox="0 0 24 24">
+              <line x1="4" y1="7" x2="20" y2="7"></line>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="17" x2="20" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#capabilities">Capabilities</a></li>
+          <li><a href="#journey">Experience</a></li>
+          <li><a href="#philosophy">Philosophy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home" aria-label="Introduction">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <div class="hero-meta">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Project Lead · LOXA Digital &amp; BPR Varia IT · West Jakarta</span>
+              </div>
+              <h1>
+                From Banking Platforms to AI Agents —
+                <span class="highlight">Software That Ships Value.</span>
+              </h1>
+              <p class="hero-subtitle">
+                Full-Stack Engineer &amp; IT Lead delivering OJK-ready mobile banking,
+                SNAP payment gateways, HRIS compliance, and AI systems across Go,
+                Python, PHP, and TypeScript.
+              </p>
+              <p class="hero-summary">
+                200+ bank clients on OpenBankPlus. VariaGo mobile banking &amp; SNAP VA/QRIS
+                middleware in production. Automated PPh 21 &amp; BPJS payroll replacing manual processing.
+              </p>
+              <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary" id="hero-btn-contact">Get in Touch</a>
+                <a href="#work" class="btn btn-secondary" id="hero-btn-work">Selected Work ↓</a>
+              </div>
+            </div>
+
+            <div class="portrait-frame">
+              <img
+                src="./profile-dion-christian.jpg"
+                alt="Dion Christian — Full-Stack Engineer & Project Lead"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="portrait-fallback">DC</div>
+              <div class="portrait-caption">
+                <span>Dion Christian</span>
+                <span>Go · Python · PHP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Unified Positioning & Key Metrics -->
+      <section class="section-band impact-band animate-on-scroll" aria-label="Positioning and Key Metrics">
+        <div class="container">
+          <p class="positioning-statement">
+            I don't just write code — as a dedicated
+            <span class="accent">Full-Stack Developer in Indonesia</span>, I architect
+            systems where <span class="accent">regulatory compliance</span>,
+            <span class="accent">fault tolerance</span>, and
+            <span class="accent">AI-driven intelligence</span> are built in from day one,
+            not bolted on later.
+          </p>
+
+          <div class="metrics-grid">
+            <div class="metric-cell">
+              <div class="metric-value"><span class="accent">200+</span></div>
+              <div class="metric-label">BPR Bank Clients</div>
+              <div class="metric-note">Active on OpenBankPlus</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-value">100K+</div>
+              <div class="metric-label">Monthly Transactions</div>
+              <div class="metric-note">Real-time payment &amp; biller traffic</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-value">7+</div>
+              <div class="metric-label">Years Shipping Software</div>
+              <div class="metric-note">Across fintech, HRIS &amp; AI</div>
+            </div>
+            <div class="metric-cell">
+              <div class="metric-value"><span class="accent">Zero</span></div>
+              <div class="metric-label">Critical Launch Issues</div>
+              <div class="metric-note">100% manual payroll automated</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Work & Open Source -->
+      <section id="work" aria-label="Selected Work">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <div>
+              <span class="section-kicker">Selected Work &amp; Open Source</span>
+              <h2 class="section-heading">Systems in Production</h2>
+            </div>
+
+            <div class="filter-bar" role="group" aria-label="Filter projects by domain">
+              <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="filter-btn" data-filter="fintech" aria-pressed="false">Fintech &amp; Enterprise</button>
+              <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI &amp; Trading</button>
+              <button type="button" class="filter-btn" data-filter="oss" aria-pressed="false">Open Source</button>
+            </div>
+          </div>
+
+          <!-- Featured 2-Card Showcase -->
+          <div class="featured-grid" id="featured-projects-grid">
+            <!-- Featured 1: BPR Varia (VariaGo + SNAP API Hub) -->
+            <article class="project-card animate-on-scroll" data-category="fintech">
+              <div class="project-card-top">
+                <span class="project-label">Featured · Mobile Banking &amp; SNAP API</span>
+              </div>
+              <h3 class="project-title">VariaGo — Mobile Banking PWA &amp; API Gateway</h3>
+              <p class="project-outcome">
+                OJK &amp; UU PDP-aligned mobile banking platform with a custom TypeScript SNAP middleware hub powering real-time BNI Virtual Accounts, QRIS, and Maker–Checker CIF governance.
+              </p>
+
+              <div class="preview-frame">
+                <div class="spec-panel">
+                  <div class="spec-panel-head">
+                    <span>SYSTEM ARCHITECTURE</span>
+                    <span class="spec-badge">POJK 34/2025 READY</span>
+                  </div>
+                  <div class="spec-rows">
+                    <div class="spec-item">
+                      <div class="spec-item-k">SNAP Gateway</div>
+                      <div class="spec-item-v">BNI Direct VA + QRIS MPM</div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-item-k">Governance</div>
+                      <div class="spec-item-v">Maker–Checker CIF Sync</div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-item-k">Assurance</div>
+                      <div class="spec-item-v">26/26 RBAC Tests + DR Drills</div>
+                    </div>
+                    <div class="spec-item">
+                      <div class="spec-item-k">Client Stack</div>
+                      <div class="spec-item-v">Vue 3 PWA · Laravel · Node TS</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-caption">
+                  <span>Vue 3 PWA · Laravel · TypeScript Gateway</span>
+                  <span>Zero third-party middleware fees</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Vue 3</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">SNAP BI / QRIS</span>
+                <span class="tag">POJK 34/2025</span>
+              </div>
+
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Connect mobile banking and core banking systems to BNI Direct SNAP Virtual Accounts and Bluepay QRIS while meeting POJK 34/2025 governance and UU PDP No. 27/2022 data controls without expensive vendor licensing.</p>
+                  <p><strong>Approach:</strong> Deployed a custom Node.js/TypeScript API Gateway Hub alongside the Vue 3 PWA + Laravel backend — handling SNAP BI signatures, real-time CBS overbooking, H+1 settlement batching, Maker–Checker–Approver CIF reconciliation, and universal API audit logs.</p>
+                  <p><strong>Impact:</strong> Eliminated third-party middleware setup/annual fees, passed 26/26 admin RBAC verification checks and isolated DR restore drills, and established auditable digital banking workflows.</p>
+                </div>
+              </details>
+            </article>
+
+            <!-- Featured 2: Algorithmic Trading System -->
+            <article class="project-card animate-on-scroll" data-category="ai">
+              <div class="project-card-top">
+                <span class="project-label">Featured · Go · Live Trading</span>
+              </div>
+              <h3 class="project-title">Algorithmic Trading System (Go + Binance)</h3>
+              <p class="project-outcome">
+                Autonomous 24/7 execution engine trading 6 symbols with confidence-weighted entries, Kafka pipelines, and automated risk controls.
+              </p>
+
+              <div class="preview-frame">
+                <img
+                  src="./preview-bot-dashboard.png"
+                  alt="Trading Bot Monitor live telemetry screenshot"
+                  class="preview-screenshot"
+                  loading="lazy"
+                />
+                <div class="preview-caption">
+                  <span>Trading Bot Monitor (Live UI)</span>
+                  <span>60.8% backtested win rate</span>
+                </div>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Go</span>
+                <span class="tag">Binance API</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">Smart Money</span>
+              </div>
+
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Combine Smart Money on-chain signals (whale tracking, DeFi flows) with deterministic technical execution running 24/7 with hard risk limits.</p>
+                  <p><strong>Approach:</strong> Built a Go execution core connected to Binance API and Kafka event streams, scoring multi-source signals across SuperStrategy and breakout scanners.</p>
+                  <p><strong>Impact:</strong> Processes 6 live pairs continuously with Telegram alerting, automated liquidation protection, and a 60.8% validated win rate.</p>
+                </div>
+              </details>
+            </article>
+          </div>
+
+          <!-- Unified Filterable Project & Open Source Grid -->
+          <div class="projects-grid" id="secondary-projects-grid">
+            <article class="project-card animate-on-scroll" data-category="fintech">
+              <div class="project-card-top">
+                <span class="project-label">Fintech · Laravel 11 · Operations</span>
+              </div>
+              <h3 class="project-title">VariaPlatform — Modular CBS Analytics &amp; Watchdogs</h3>
+              <p class="project-outcome">
+                Replaced legacy procedural PHP with a modular Laravel 11 core featuring 6-hourly CBS index rebuilds and autonomous risk, liquidity, and cash-threshold daemons.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Laravel 11</span>
+                <span class="tag">PHP 8</span>
+                <span class="tag">MySQL / MariaDB</span>
+                <span class="tag">Watchdogs</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Modernize legacy reporting scripts into an auditable internal banking analytics and attendance platform synchronized with periodic core-banking backups.</p>
+                  <p><strong>Approach:</strong> Built modular Laravel packages with 17 automated tests, scheduled post-restore index rebuilding and cache warming, and continuous watchdog daemons flagging high-value teller activity, maturing deposits, and credit risk indicators into a staging review queue.</p>
+                  <p><strong>Impact:</strong> Cut reporting latency, standardized automated testing, and gave operations daily 1-click anomaly reconciliation.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="fintech">
+              <div class="project-card-top">
+                <span class="project-label">Infrastructure · Email &amp; Compliance</span>
+              </div>
+              <h3 class="project-title">Hybrid Enterprise Mail &amp; Audit Vault</h3>
+              <p class="project-outcome">
+                Split-delivery mail architecture pairing Google Workspace with a self-hosted Postfix/Dovecot/Rspamd cluster, Nextcloud Mail, and an immutable regulatory archive.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Postfix / Dovecot</span>
+                <span class="tag">Rspamd</span>
+                <span class="tag">Nextcloud</span>
+                <span class="tag">SPF / DKIM / DMARC</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Provision 24+ department and staff mailboxes with full OJK audit retention and Google Workspace interoperability while keeping per-seat licensing lean.</p>
+                  <p><strong>Approach:</strong> Engineered split-delivery MX routing between Google Workspace and a hardened VPS mail stack integrated with Nextcloud webmail, dual SPF/DKIM/DMARC/FCrDNS PTR authentication, and automated compliance BCC journaling.</p>
+                  <p><strong>Impact:</strong> Delivered end-to-end verified external deliverability and 100% inbound/outbound regulatory email archiving.</p>
+                </div>
+              </details>
+            </article>
+            <article class="project-card animate-on-scroll" data-category="fintech">
+              <div class="project-card-top">
+                <span class="project-label">Fintech · CodeIgniter 4</span>
+              </div>
+              <h3 class="project-title">OpenBankPlus — Financial &amp; Insurance Platform</h3>
+              <p class="project-outcome">
+                Serving 200+ BPR clients and 100K+ monthly transactions — unified e-statement OCR analysis, digital insurance underwriting, and biller payments.
+              </p>
+              <div class="project-tags">
+                <span class="tag">PHP 8</span>
+                <span class="tag">CodeIgniter 4</span>
+                <span class="tag">FPDI/FPDF</span>
+                <span class="tag">DurianPay</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Unify bank e-statement analytics, insurance underwriting (AJK, Property, Vehicle), and high-volume bill payments into one multi-tenant system.</p>
+                  <p><strong>Approach:</strong> Engineered 5 core modules covering e-statement parsing, FPDI/FPDF template underwriting, PhpSpreadsheet triage, DurianPay checkout, and full API audit logs.</p>
+                  <p><strong>Impact:</strong> Eliminated manual underwriting entry and enabled real-time payment reconciliation across 200+ institutional tenants.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="fintech">
+              <div class="project-card-top">
+                <span class="project-label">Enterprise · HR Tech · On-Premise</span>
+              </div>
+              <h3 class="project-title">HRIS Platform — Payroll &amp; Compliance</h3>
+              <p class="project-outcome">
+                Automated PPh 21 and BPJS payroll calculations replacing days of manual spreadsheet work with seconds-long on-premise execution.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Prisma</span>
+                <span class="tag">CoreTax</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Deliver strict on-premise Indonesian labor compliance and GPS/selfie attendance where zero employee data may leave company infrastructure.</p>
+                  <p><strong>Approach:</strong> Built React + TypeScript frontend, Express/Prisma backend on PostgreSQL, Dockerized deployment, progressive PPh 21 brackets, BPJS automation, and CoreTax BPMP XML exports.</p>
+                  <p><strong>Impact:</strong> Replaced manual payroll completely, eliminated proxy clock-ins with GPS selfie checks, and maintained full audit trails.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="ai">
+              <div class="project-card-top">
+                <span class="project-label">AI Agents · Python</span>
+              </div>
+              <h3 class="project-title">Hermes — Autonomous AI Agent</h3>
+              <p class="project-outcome">
+                Handles 200+ tool calls per session with 95%+ success rate across research, code review, server ops, and trading automation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">AI Agents</span>
+                <span class="tag">RAG</span>
+                <span class="tag">Qdrant</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Move beyond stateless chatbots into a production agent with durable memory, 30+ integrations, and sub-agent delegation.</p>
+                  <p><strong>Approach:</strong> Built a Python orchestration loop over Qdrant RAG memory with terminal, file, and web tooling plus multi-platform Telegram/Discord interfaces.</p>
+                  <p><strong>Impact:</strong> Reliably executes long multi-step workflows (200+ tool calls/session) across operational and research tasks.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="ai">
+              <div class="project-card-top">
+                <span class="project-label">AI / ML · Quantitative</span>
+              </div>
+              <h3 class="project-title">Stock &amp; Crypto Prediction Engine</h3>
+              <p class="project-outcome">
+                78% directional prediction accuracy combining LSTM and XGBoost ensembles with daily retraining for live signals.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">LSTM</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">Backtesting</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Generate actionable risk-adjusted directional signals for both equities and crypto rather than unvalidated chart overlays.</p>
+                  <p><strong>Approach:</strong> Paired time-series LSTM models with feature-engineered XGBoost classifiers trained on historical OHLCV data across 5 backtest iterations.</p>
+                  <p><strong>Impact:</strong> Hit 78% directional accuracy and validated a 60.8% win rate on BNB at 1:2 risk/reward feeding live trading bots.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="ai">
+              <div class="project-card-top">
+                <span class="project-label">Infrastructure · Vector Search</span>
+              </div>
+              <h3 class="project-title">RAG Knowledge Retrieval System</h3>
+              <p class="project-outcome">
+                Sub-second citation-backed retrieval across 10K+ document chunks powering long-term agent memory without hallucinations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Qdrant</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">RAG</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Ingest, chunk, embed, and retrieve domain documents while preserving verifiable source citations.</p>
+                  <p><strong>Approach:</strong> Deployed a FastAPI pipeline backed by Qdrant vector search with structured metadata filtering for LLM consumers.</p>
+                  <p><strong>Impact:</strong> Serves 10K+ indexed chunks with sub-second lookup latency as the retrieval backbone for Hermes.</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="fintech">
+              <div class="project-card-top">
+                <span class="project-label">EdTech · Full Stack</span>
+              </div>
+              <h3 class="project-title">School Management System</h3>
+              <p class="project-outcome">
+                Eliminated 80% of manual paperwork — turning hours of grading and report card assembly into minutes.
+              </p>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">EdTech</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>Challenge:</strong> Replace paper-based student records, curriculum tracking, and grading for non-technical teaching staff.</p>
+                  <p><strong>Approach:</strong> Built an end-to-end web system during tenure as Vice Principal focused on intuitive teacher workflows and automated report generation.</p>
+                  <p><strong>Impact:</strong> Cut administrative overhead by 80% across grading cycles and institutional records.</p>
+                </div>
+              </details>
+            </article>
+
+            <!-- Open Source Projects (deduplicated) -->
+            <article class="project-card animate-on-scroll" data-category="oss">
+              <div class="project-card-top">
+                <span class="project-label">Open Source · Python / PyPI</span>
+                <div class="project-links">
+                  <a href="https://github.com/dioncx/json-memory" target="_blank" rel="noopener noreferrer" class="project-ext-link" id="os-json-github">GitHub ↗</a>
+                  <a href="https://pypi.org/project/json-memory/" target="_blank" rel="noopener noreferrer" class="project-ext-link" id="os-json-pypi">PyPI ↗</a>
+                </div>
+              </div>
+              <h3 class="project-title">json-memory — Associative Recall for AI</h3>
+              <p class="project-outcome">
+                Zero-dependency Python library for hierarchical JSON agent memory with 3-layer stemming recall, TTLs, LRU eviction, and 101 passing tests.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyPI</span>
+                <span class="tag">101 Tests</span>
+                <span class="tag">Zero Deps</span>
+              </div>
+              <details class="case-details">
+                <summary>Architecture &amp; Impact</summary>
+                <div class="case-details-body">
+                  <p><strong>How:</strong> Implements exact → normalized → fuzzy three-layer stemming, thread-safe atomic merges, schema validation, and OpenAI tool schema generation.</p>
+                  <p><strong>Impact:</strong> Outperforms naive keyword recall by 10% on complex queries; used in production by Hermes (<code>pip install json-memory</code>).</p>
+                </div>
+              </details>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="oss">
+              <div class="project-card-top">
+                <span class="project-label">Open Source · Go</span>
+                <div class="project-links">
+                  <a href="https://github.com/dioncx/go-api-starter" target="_blank" rel="noopener noreferrer" class="project-ext-link" id="os-go-github">GitHub ↗</a>
+                </div>
+              </div>
+              <h3 class="project-title">go-api-starter</h3>
+              <p class="project-outcome">
+                Production-ready Go service template with WebSocket support, Docker packaging, graceful shutdown, and structured logging.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Go</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">Docker</span>
+              </div>
+            </article>
+
+            <article class="project-card animate-on-scroll" data-category="oss">
+              <div class="project-card-top">
+                <span class="project-label">Open Source · PHP / Vue 3</span>
+                <div class="project-links">
+                  <a href="https://github.com/dioncx/laravel-vue-starter" target="_blank" rel="noopener noreferrer" class="project-ext-link" id="os-laravel-github">GitHub ↗</a>
+                </div>
+              </div>
+              <h3 class="project-title">laravel-vue-starter</h3>
+              <p class="project-outcome">
+                Laravel 11 + Vue 3 + Inertia.js + TypeScript starter — the exact foundation behind production fintech PWAs.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Laravel 11</span>
+                <span class="tag">Vue 3</span>
+                <span class="tag">Inertia.js</span>
+                <span class="tag">TypeScript</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="work-footer-cta animate-on-scroll">
+            <a
+              href="https://github.com/dioncx/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+              id="work-btn-full-portfolio"
+            >View Full Portfolio on GitHub ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Capabilities: Core Strengths & Tech Stack -->
+      <section class="section-band" id="capabilities" aria-label="Core Strengths and Tech Stack">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <div>
+              <span class="section-kicker">Capabilities</span>
+              <h2 class="section-heading">Strengths &amp; Technical Stack</h2>
+            </div>
+          </div>
+
+          <div class="strengths-grid animate-on-scroll">
+            <div class="strength-card">
+              <div class="strength-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3>Fintech-Grade Architecture</h3>
+              <p>
+                Shipped OJK-compliant banking systems handling real money — eKYC
+                verification, QRIS integration, and multi-layer auth built to pass audits.
+              </p>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Full-Stack Polyglot</h3>
+              <p>
+                Go for low-latency execution engines, Python for ML and AI agents,
+                PHP/Laravel for enterprise APIs, and Vue 3 / React for PWAs.
+              </p>
+            </div>
+
+            <div class="strength-card">
+              <div class="strength-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3>Ship-and-Own Mentality</h3>
+              <p>
+                From Vice Principal building a school platform to Project Lead delivering
+                banking infrastructure — owning design, deploy, and live monitoring.
+              </p>
+            </div>
+          </div>
+
+          <div class="stack-table animate-on-scroll">
+            <div class="stack-row">
+              <div class="stack-label">Backend</div>
+              <div class="stack-tags">
+                <span class="tag">Go</span>
+                <span class="tag">PHP / Laravel 11</span>
+                <span class="tag">CodeIgniter 4</span>
+                <span class="tag">Node.js / TypeScript</span>
+                <span class="tag">Python / FastAPI</span>
+              </div>
+            </div>
+            <div class="stack-row">
+              <div class="stack-label">Frontend</div>
+              <div class="stack-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Vue 3</span>
+                <span class="tag">Inertia.js</span>
+                <span class="tag">PWA</span>
+              </div>
+            </div>
+            <div class="stack-row">
+              <div class="stack-label">Database &amp; Infra</div>
+              <div class="stack-tags">
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MySQL / MariaDB</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Nginx</span>
+              </div>
+            </div>
+            <div class="stack-row">
+              <div class="stack-label">AI &amp; Data</div>
+              <div class="stack-tags">
+                <span class="tag">LSTM</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">RAG / Qdrant</span>
+                <span class="tag">AI Agents</span>
+                <span class="tag">Apache Kafka</span>
+              </div>
+            </div>
+            <div class="stack-row">
+              <div class="stack-label">Domain</div>
+              <div class="stack-tags">
+                <span class="tag">POJK 34/2025 &amp; UU PDP</span>
+                <span class="tag">SNAP BI / VA / QRIS</span>
+                <span class="tag">HRIS / PPh 21 / CoreTax</span>
+                <span class="tag">CBS Analytics</span>
+                <span class="tag">Algorithmic Trading</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Journey -->
+      <section id="journey" aria-label="Professional Journey">
+        <div class="container">
+          <div class="section-header animate-on-scroll">
+            <div>
+              <span class="section-kicker">Experience</span>
+              <h2 class="section-heading">Professional Journey</h2>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2025 — Present</span>
+                <h3 class="timeline-title">Project Lead &amp; IT Lead</h3>
+                <span class="timeline-company">LOXA Digital · PT BPR Varia Centralartha</span>
+              </div>
+              <p class="timeline-description">
+                Leading end-to-end banking and enterprise delivery from both vendor and
+                institutional sides: VariaGo mobile banking PWA, custom SNAP VA/QRIS API
+                middleware, modular Laravel 11 CBS analytics &amp; risk watchdogs, hybrid
+                compliance mail infrastructure, on-premise HRIS (PPh 21/BPJS/CoreTax), and
+                POJK 34/2025 regulatory readiness.
+              </p>
+            </div>
+
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2023 — 2025</span>
+                <h3 class="timeline-title">Full Stack Engineer</h3>
+                <span class="timeline-company">Loxa Esolution Cyber Application</span>
+              </div>
+              <p class="timeline-description">
+                Built and optimized production web applications with Laravel and Vue 3,
+                designed schemas for complex financial workflows, implemented REST APIs,
+                and resolved high-traffic database bottlenecks.
+              </p>
+            </div>
+
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2022 — 2023</span>
+                <h3 class="timeline-title">Vice Principal &amp; Systems Builder</h3>
+                <span class="timeline-company">Academic Leadership</span>
+              </div>
+              <p class="timeline-description">
+                Led digital transformation while building the school's management system
+                from scratch — student records, curriculum tracking, and staff adoption.
+              </p>
+            </div>
+
+            <div class="timeline-item animate-on-scroll">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2018 — 2022</span>
+                <h3 class="timeline-title">Computer Teacher &amp; Developer</h3>
+                <span class="timeline-company">Education Sector</span>
+              </div>
+              <p class="timeline-description">
+                Taught computer science fundamentals while building internal grading and
+                student assessment tools — sharpening clear communication of complex
+                systems to non-technical stakeholders.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Engineering Philosophy -->
+      <section class="section-band" id="philosophy" aria-label="Engineering Philosophy">
+        <div class="container">
+          <div class="philosophy-grid">
+            <div class="philosophy-sticky animate-on-scroll">
+              <span class="section-kicker">Principles</span>
+              <h2 class="section-heading">Engineering Philosophy</h2>
+              <blockquote class="philosophy-quote">
+                "The best code is the code that ships, stays running, and doesn't wake
+                you up at 3am. I optimize for production reliability over architectural
+                purity — real users care whether it works."
+              </blockquote>
+            </div>
+
+            <ol class="approach-list animate-on-scroll">
+              <li class="approach-step">
+                <span class="step-num">01</span>
+                <div class="step-body">
+                  <strong>Start with the failure mode</strong>
+                  <span>Map blast radius, compliance boundaries, and recovery paths before writing features.</span>
+                </div>
+              </li>
+              <li class="approach-step">
+                <span class="step-num">02</span>
+                <div class="step-body">
+                  <strong>Pick boring technology for critical paths</strong>
+                  <span>Go for execution engines, PostgreSQL for ledgers, proven patterns for auth — keep experiments off the critical path.</span>
+                </div>
+              </li>
+              <li class="approach-step">
+                <span class="step-num">03</span>
+                <div class="step-body">
+                  <strong>Build observability from day one</strong>
+                  <span>Structured logs, health checks, and telemetry go live before the first external user arrives.</span>
+                </div>
+              </li>
+              <li class="approach-step">
+                <span class="step-num">04</span>
+                <div class="step-body">
+                  <strong>Own the full lifecycle</strong>
+                  <span>Design, build, deploy, monitor, and debug in production — no throwing code over the wall.</span>
+                </div>
+              </li>
+              <li class="approach-step">
+                <span class="step-num">05</span>
+                <div class="step-body">
+                  <strong>Ship first, optimize on real load</strong>
+                  <span>Production telemetry beats speculative tuning; measure real bottlenecks before optimizing.</span>
+                </div>
+              </li>
+              <li class="approach-step">
+                <span class="step-num">06</span>
+                <div class="step-body">
+                  <strong>Enforce quality gates</strong>
+                  <span>Automated checks, edge-case guards, and production alerting catch regressions early.</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section id="contact" aria-label="Contact">
+        <div class="container">
+          <div class="contact-box animate-on-scroll">
+            <div class="contact-copy">
+              <span class="section-kicker">Contact</span>
+              <h2>Let's build something reliable.</h2>
+              <p>
+                Available for freelance delivery, remote engineering contracts, and
+                technical consulting across fintech, HRIS, and AI systems.
+              </p>
+            </div>
+
+            <div class="contact-actions">
+              <div class="contact-buttons">
+                <a
+                  href="https://wa.me/628817203939"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                  id="contact-wa-btn"
+                >WhatsApp ↗</a>
+                <a
+                  href="https://t.me/Dionchr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                  id="contact-telegram-btn"
+                >Telegram ↗</a>
+              </div>
+              <div class="email-row">
+                <a href="mailto:dion.christiann@gmail.com" class="contact-email" id="contact-email-btn">
+                  dion.christiann@gmail.com
+                </a>
+                <button type="button" class="copy-btn" id="copy-email-btn" aria-label="Copy email address">
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-text">&copy; 2026 Dion Christian. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="https://wa.me/628817203939" target="_blank" rel="noopener noreferrer" id="footer-wa-lnk">WhatsApp</a>
+            <a href="https://t.me/Dionchr" target="_blank" rel="noopener noreferrer" id="footer-tg-lnk">Telegram</a>
+            <a href="mailto:dion.christiann@gmail.com" id="footer-email-lnk">Email</a>
+            <a href="https://github.com/dioncx" target="_blank" rel="noopener noreferrer" id="footer-git-lnk">GitHub</a>
+            <a href="https://www.linkedin.com/in/dion-christian/" target="_blank" rel="noopener noreferrer" id="footer-linkedin-lnk">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <noscript>
+      <style>
+        .animate-on-scroll {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+  </body>
+</html>

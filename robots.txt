@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://veludra.web.id/sitemap.xml
